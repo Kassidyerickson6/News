@@ -1,30 +1,25 @@
-// Require mongoose
+// Requires Mongoose
 var mongoose = require("mongoose");
-// Create Schema class
+// Schema class
 var Schema = mongoose.Schema;
 
-// Create article schema
+// news schema
 var NewsSchema = new Schema({
-  // title is a required string
   title: {
     type: String,
     required: true
   },
-  // link is a required string
-  // todo save summary paragraph instead of link
-  link: {
-    type: String,
-    required: true
-  },
-  // Saves array of notes.
   notes: [{
     type: Schema.Types.ObjectId,
     ref: "Notes"
-  }]
+  }],
+  link: {
+    type: String,
+    required: true
+  }
 });
 
-// Create the Article model with the ArticleSchema
 var News = mongoose.model("News", NewsSchema);
 
-// Export the model
+// Exports the model
 module.exports = News;

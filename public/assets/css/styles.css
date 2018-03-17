@@ -1,0 +1,40 @@
+html {
+	font-size: 14px;
+}
+
+p {
+	font-size: 20px;
+	margin-left: 1%;
+	margin-top: 1%;
+}
+
+#input {
+    width: 75%;
+}
+
+.jumbotron {
+	overflow: hidden;
+    background-size: 100%;
+    background-position: center;
+    background-image: url('../images/nytimes.jpg');
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 100%;
+}
+
+.panel-heading.row {
+	width: 100%;
+    margin-left: 0%;
+}
+
+.panel-primary {
+    height: 120px;
+}
+
+#save {
+    display: block;
+}
+
+@media screen and (max-width: 640px) {
+	
+}
